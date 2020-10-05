@@ -1,0 +1,24 @@
+{
+  "name": "oauth-authetication-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chamikaravinda/OAuth-authetication-demo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chamikaravinda/OAuth-authetication-demo/issues"
+  },
+  "homepage": "https://github.com/chamikaravinda/OAuth-authetication-demo#readme",
+  "dependencies": {
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.4"
+  }
+}
