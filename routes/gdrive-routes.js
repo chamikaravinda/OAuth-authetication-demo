@@ -18,11 +18,7 @@ router.get("/", authCheck, async (req, res) => {
 
 router.post("/upload", function (req, res) {
   // config google drive with client token
-  const oauth2Client = new google.auth.OAuth2(
-    keys.google.clientID,
-    keys.google.clientSecret,
-    "/auth/google/redirect"
-  );
+  const oauth2Client = new google.auth.OAuth2();
   oauth2Client.setCredentials({
     access_token: req.user.accessToken,
   });
