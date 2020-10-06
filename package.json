@@ -17,9 +17,11 @@
   },
   "homepage": "https://github.com/chamikaravinda/OAuth-authetication-demo#readme",
   "dependencies": {
+    "axios": "^0.20.0",
     "cookie-session": "^1.4.0",
     "ejs": "^3.1.5",
     "express": "^4.17.1",
+    "googleapis": "^39.2.0",
     "mongoose": "^5.10.7",
     "nodemon": "^2.0.4",
     "passport": "^0.4.1",

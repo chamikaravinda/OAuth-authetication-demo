@@ -5,6 +5,8 @@ const userSchema = new Schema({
   username: String,
   googleId: String,
   thumbnail: String,
+  accessToken: String,
+  refreshToken: String,
 });
 
 const User = mongoose.model("user", userSchema);

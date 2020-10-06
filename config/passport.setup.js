@@ -23,6 +23,7 @@ passport.use(
     },
     (accessToken, refreshToken, profile, done) => {
       //passport call back function
+      console.log(refreshToken);
       User.findOne({ googleId: profile.id }).then((currentUser) => {
         if (currentUser) {
           //already have a user
@@ -34,6 +35,8 @@ passport.use(
             username: profile.displayName,
             googleId: profile.id,
             thumbnail: profile._json.picture,
+            accessToken: accessToken,
+            refreshToken: refreshToken,
           })
             .save()
             .then((newUser) => {
