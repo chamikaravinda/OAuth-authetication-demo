@@ -3,62 +3,52 @@
   <head>
     <meta charset="utf-8" />
     <title>Login</title>
-    <style>
-      body {
-        font-family: arial;
-        margin: 0;
-      }
-      nav {
-        background: #ff5353;
-        padding: 20px 10px;
-      }
-      nav ul {
-        max-width: 960px;
-        margin: 0 auto;
-        padding: 0;
-      }
-      nav li {
-        list-style-type: none;
-        display: inline-block;
-        margin: 0 10px 0 0;
-      }
-      nav a {
-        color: #fff;
-        font-size: 18px;
-        background: rgba(255, 255, 255, 0.2);
-        text-decoration: none;
-        padding: 10px;
-        display: block;
-      }
-      main,
-      header {
-        max-width: 960px;
-        margin: 30px auto;
-        padding: 0 10px;
-        color: #333;
-      }
-      .google-btn {
-        color: #fff;
-        text-decoration: none;
-        font-size: 18px;
-        padding: 10px;
-        background: #ff5353;
-      }
-    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
   </head>
-  <body>
-    <nav>
-      <ul>
-        <li><a href="/auth/logout">Logout</a></li>
-        <li><a href="/auth/login">Login</a></li>
-        <li><a href="/">Homepage</a></li>
-      </ul>
-    </nav>
-    <header>
-      <h1>Login using...</h1>
-    </header>
-    <main>
-      <a class="google-btn" href="/auth/google">Google+</a>
-    </main>
+  <body class="text-center">
+    <div class="container" style="padding-top: 20vh">
+      <img
+        class="mb-4"
+        src="/images/mr-mail_1.jpg"
+        alt=""
+        width="72"
+        height="72"
+      />
+      <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
+      <br />
+      <a class="google-btn" href="/auth/google"
+        ><button class="btn btn-primary">
+          <i class="fa fa-google"></i> Sign in with Google
+        </button></a
+      >
+      <br /><br />
+      <a class="google-btn" href="/">Go back to home</a>
+      <p class="mt-5 mb-3 text-muted">&copy; 2017-2020</p>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
