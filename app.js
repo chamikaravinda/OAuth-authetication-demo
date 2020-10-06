@@ -1,12 +1,14 @@
 const express = require("express");
 const authRouter = require("./routes/auth-routes");
 const profileRouter = require("./routes/profile-routes");
-const emailRouter = require("./routes/email-routes");
+const gdriveRouter = require("./routes/gdrive-routes");
 const passportSetup = require("./config/passport.setup");
 const mongoose = require("mongoose");
 const keys = require("./config/keys");
 const cookieSession = require("cookie-session");
 const passport = require("passport");
+const fileUpload = require("express-fileupload");
+const nunjucks = require("nunjucks");
 
 const app = express();
 
@@ -29,10 +31,13 @@ mongoose.connect(keys.mongodb.dbURI, () => {
   console.log("connected to the mongo DB");
 });
 
+// file upload
+app.use(fileUpload());
+
 //set up routes
 app.use("/auth", authRouter);
 app.use("/profile", profileRouter);
-app.use("/emails", emailRouter);
+app.use("/gdrive", gdriveRouter);
 
 app.get("/", (req, res) => {
   res.render("home", { user: req.user });

@@ -3,10 +3,11 @@ const Schema = mongoose.Schema;
 
 const userSchema = new Schema({
   username: String,
-  googleId: String,
+  googleID: String,
   thumbnail: String,
   accessToken: String,
   refreshToken: String,
+  email: String,
 });
 
 const User = mongoose.model("user", userSchema);
